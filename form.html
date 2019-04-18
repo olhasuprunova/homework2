@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+    <h1>Sign up Form</h1>
+    </header>
+    <section>
+        <h2>Sign up</h2>
+        <form action="https://formspree.io/suprunovaolha@gmail.com" method="POST">
+            <label>
+                Name: <input type="text" name="your name" placeholder="Name" required>
+            </label>
+            <br>
+            <label>
+                Email: <input type="email" name="your email" placeholder="Email" required>
+            </label>
+            <br>
+            <label>
+                Password: <input type="password" name="your password" placeholder="Password" required>
+            </label>
+            <br>
+            <label>
+                Phone: <input type="tel" name="your phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </label>
+            <br>
+            <p>I would like to receive news and latest updates</p>
+            <label>
+                yes: <input type="radio" value="yes" name="updates" checked>yes
+            <br>
+            </label>
+            <label>
+                no: <input type="radio" value="no" name="updates" checked>no
+            </label>
+            <br>
+            <label>
+                How many cups of coffee per day do you drink?
+            </label>
+            <br>
+            <input id="1" type="radio" name="coffee" required>
+            <label for="1">1</label>
+            <br>
+            <input id="2" type="radio" name="coffee" required>
+            <label for="2">2</label>
+            <br>
+            <input id="nocoffee" type="radio" name="coffee" required>
+            <label for="nocoffee">I don't drink coffee</label>
+            <label>
+                <br>
+                Which coffee do you prefer?
+                <br>
+                <select id="coffeetype" name="coffeetype">
+                 <option>Espresso</option>
+                 <option>Americano</option>
+                 <option>Cappuccino</option>
+                 <option>Latte</option>
+                 </select>
+            </label>
+            <label>
+                <br>
+                Do you drink coffee with milk?
+                <br>
+                <select id="milk" name="milk">
+                 <option>Yes</option>
+                 <option>No</option>
+                </select>
+            </label>
+                <br>
+            <label>
+                Your comment:
+                <br>
+                <textarea name="comments"></textarea>
+            </label>
+            <br>
+            <label>
+            <input type="reset">
+            </label>
+            <label>
+            <input type="submit">
+            </label>
+        </form>
+    </section>
+</body>
+</html>
